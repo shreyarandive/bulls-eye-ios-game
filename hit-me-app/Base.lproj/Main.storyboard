@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hit_me_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="9bl-Ic-vli">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WtH-sV-Q0J">
+                                <rect key="frame" x="114" y="124.5" width="692" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRJ-fD-Bdk">
+                                        <rect key="frame" x="0.0" y="0.0" width="11.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cvO-Gw-27y">
+                                        <rect key="frame" x="29.5" y="0.0" width="611" height="31"/>
+                                        <connections>
+                                            <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="sCF-bK-T7a"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3d-vh-lNk">
+                                        <rect key="frame" x="658.5" y="0.0" width="33.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="692" id="DJl-X2-Zwk"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gf2-1x-v10">
+                                <rect key="frame" x="277" y="56" width="342" height="26"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put the slider as close as you can:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC2-Us-cnt">
+                                        <rect key="frame" x="0.0" y="0.0" width="298.5" height="26"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vup-QI-NXT">
+                                        <rect key="frame" x="308.5" y="0.0" width="33.5" height="26"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gm6-uB-56J">
+                                <rect key="frame" x="512" y="301" width="63" height="23.5"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLh-1T-plt">
+                                <rect key="frame" x="581" y="299.5" width="33.5" height="26"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsG-ot-Z99">
+                                <rect key="frame" x="790" y="304.5" width="16" height="16"/>
+                                <state key="normal" image="InfoButton" backgroundImage="SmallButton"/>
+                                <connections>
+                                    <segue destination="EjQ-DL-fiq" kind="presentation" modalTransitionStyle="flipHorizontal" id="PVC-BV-i8W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2y3-Mc-HXd">
+                                <rect key="frame" x="235" y="301" width="56.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB1-mN-c6M">
+                                <rect key="frame" x="300" y="299.5" width="56" height="26"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCy-Uv-1Uv">
+                                <rect key="frame" x="413.5" y="194.5" width="69" height="25"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                <state key="normal" title="Hit me!" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.41960784309999999" green="0.031372549020000001" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="Button-Highlighted"/>
+                                <connections>
+                                    <action selector="hitmMeBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s9Y-Au-rrK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpT-70-54I">
+                                <rect key="frame" x="114" y="304.5" width="16" height="16"/>
+                                <state key="normal" image="StartOverIcon" backgroundImage="SmallButton"/>
+                                <connections>
+                                    <action selector="startOverBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9cc-7e-vXo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tpT-70-54I" firstAttribute="top" secondItem="WtH-sV-Q0J" secondAttribute="bottom" constant="150" id="0dL-dq-RMX"/>
+                            <constraint firstItem="KsG-ot-Z99" firstAttribute="centerY" secondItem="tpT-70-54I" secondAttribute="centerY" id="42T-eA-pa3"/>
+                            <constraint firstItem="9bl-Ic-vli" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4Hi-Qd-TLt"/>
+                            <constraint firstItem="qCy-Uv-1Uv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="54M-Eu-ajE"/>
+                            <constraint firstAttribute="bottom" secondItem="9bl-Ic-vli" secondAttribute="bottom" id="5ce-ub-a49"/>
+                            <constraint firstItem="Gf2-1x-v10" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BpW-yO-PQy"/>
+                            <constraint firstItem="9bl-Ic-vli" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C5w-8D-VCw"/>
+                            <constraint firstItem="qCy-Uv-1Uv" firstAttribute="top" secondItem="WtH-sV-Q0J" secondAttribute="bottom" constant="40" id="G75-67-Ote"/>
+                            <constraint firstItem="iB1-mN-c6M" firstAttribute="leading" secondItem="2y3-Mc-HXd" secondAttribute="trailing" constant="8.5" id="K4c-hB-4Ej"/>
+                            <constraint firstItem="2y3-Mc-HXd" firstAttribute="leading" secondItem="tpT-70-54I" secondAttribute="trailing" constant="105" id="Lrx-Jh-c8I"/>
+                            <constraint firstItem="jLh-1T-plt" firstAttribute="centerY" secondItem="gm6-uB-56J" secondAttribute="centerY" id="OmW-m8-WRo"/>
+                            <constraint firstItem="jLh-1T-plt" firstAttribute="leading" secondItem="gm6-uB-56J" secondAttribute="trailing" constant="6" id="Pcf-Ce-8Nw"/>
+                            <constraint firstItem="iB1-mN-c6M" firstAttribute="centerY" secondItem="2y3-Mc-HXd" secondAttribute="centerY" id="RbC-7Y-vFv"/>
+                            <constraint firstAttribute="trailing" secondItem="9bl-Ic-vli" secondAttribute="trailing" id="W8e-bQ-WPy"/>
+                            <constraint firstItem="gm6-uB-56J" firstAttribute="centerY" secondItem="iB1-mN-c6M" secondAttribute="centerY" id="WSf-FP-mjM"/>
+                            <constraint firstItem="KsG-ot-Z99" firstAttribute="trailing" secondItem="z3d-vh-lNk" secondAttribute="trailing" id="YVq-af-NkP"/>
+                            <constraint firstItem="tpT-70-54I" firstAttribute="leading" secondItem="kRJ-fD-Bdk" secondAttribute="leading" id="YYU-Mw-qR4"/>
+                            <constraint firstItem="qCy-Uv-1Uv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aYO-bk-54T"/>
+                            <constraint firstItem="KsG-ot-Z99" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jLh-1T-plt" secondAttribute="trailing" constant="8" symbolic="YES" id="hxQ-MB-dmS"/>
+                            <constraint firstItem="WtH-sV-Q0J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="12" id="jPH-EJ-raR"/>
+                            <constraint firstItem="2y3-Mc-HXd" firstAttribute="centerY" secondItem="tpT-70-54I" secondAttribute="centerY" id="khh-Aa-0Dt"/>
+                            <constraint firstItem="gm6-uB-56J" firstAttribute="leading" secondItem="iB1-mN-c6M" secondAttribute="trailing" constant="156" id="qkr-QV-svg"/>
+                            <constraint firstItem="WtH-sV-Q0J" firstAttribute="top" secondItem="Gf2-1x-v10" secondAttribute="bottom" constant="42.5" id="s0n-Yk-cqU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentRoundLbl" destination="jLh-1T-plt" id="NsK-sj-hw0"/>
+                        <outlet property="hitMeButton" destination="qCy-Uv-1Uv" id="RKq-aQ-xKj"/>
+                        <outlet property="slider" destination="cvO-Gw-27y" id="6dN-oE-ue4"/>
+                        <outlet property="targeLbl" destination="Vup-QI-NXT" id="Nfq-MV-Nst"/>
+                        <outlet property="totalScoreLbl" destination="iB1-mN-c6M" id="xQA-fB-yls"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.758928571428569" y="50.724637681159422"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="u2R-kX-5dy">
+            <objects>
+                <viewController id="EjQ-DL-fiq" customClass="AboutViewController" customModule="hit_me_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4L9-QY-YKm">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="bdt-Qa-81k">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SiX-Um-bpa">
+                                <rect key="frame" x="398" y="310" width="100" height="37"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                <state key="normal" title="Close" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.41960784309999999" green="0.031372549020000001" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="Button-Highlighted"/>
+                                <connections>
+                                    <action selector="closeBtnPressed" destination="EjQ-DL-fiq" eventType="touchUpInside" id="kCK-GL-c9u"/>
+                                </connections>
+                            </button>
+                            <wkWebView alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhd-qB-bfs">
+                                <rect key="frame" x="198" y="40" width="500" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="idX-mb-A2q"/>
+                                    <constraint firstAttribute="width" constant="500" id="sAx-FA-3nN"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bdt-Qa-81k" firstAttribute="leading" secondItem="4L9-QY-YKm" secondAttribute="leading" id="9m0-cz-TLk"/>
+                            <constraint firstItem="Nhd-qB-bfs" firstAttribute="top" secondItem="Oot-sm-8HG" secondAttribute="top" constant="40" id="Byl-H7-lCD"/>
+                            <constraint firstItem="bdt-Qa-81k" firstAttribute="top" secondItem="Oot-sm-8HG" secondAttribute="top" id="Cih-Hw-HdF"/>
+                            <constraint firstItem="SiX-Um-bpa" firstAttribute="top" secondItem="Nhd-qB-bfs" secondAttribute="bottom" constant="20" id="EKH-Mb-He9"/>
+                            <constraint firstAttribute="bottom" secondItem="bdt-Qa-81k" secondAttribute="bottom" id="THQ-xA-IOD"/>
+                            <constraint firstItem="SiX-Um-bpa" firstAttribute="centerX" secondItem="4L9-QY-YKm" secondAttribute="centerX" id="XR4-jK-QgM"/>
+                            <constraint firstItem="Nhd-qB-bfs" firstAttribute="centerX" secondItem="bdt-Qa-81k" secondAttribute="centerX" id="baf-hQ-ujK"/>
+                            <constraint firstItem="Nhd-qB-bfs" firstAttribute="centerX" secondItem="4L9-QY-YKm" secondAttribute="centerX" id="dvg-xK-dcf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oot-sm-8HG"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Nhd-qB-bfs" id="oZa-5Z-kEI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UdV-R4-WC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709.82142857142856" y="52.173913043478265"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="568" height="320"/>
+        <image name="Button-Highlighted" width="100" height="37"/>
+        <image name="Button-Normal" width="100" height="37"/>
+        <image name="InfoButton" width="10" height="22"/>
+        <image name="SmallButton" width="32" height="32"/>
+        <image name="StartOverIcon" width="20" height="20"/>
+    </resources>
+</document>
